@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-weight: 500px;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.navbar-brand{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+/* Utility */
+
+.navbar-nav .tombol-1{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* Jumbrotron */
+
+.jumbotron{
+    height: 600px;
+}
+
+.jumbotron .tombol-2{
+    text-transform: uppercase;
+}
+
+.footer{
+    margin-top: 60px;
+    border-top: 1px solid #DEE4EB  ;
+}
+
+
+
+
+
+/* Dexktop */
+@media (min-width: 1200px) {
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 5px;
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron .tombol-2{
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background: white;
+        padding: 10px;
+        text-transform: uppercase;
+        color: #404040;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transfom;
+        transition-property: box-shadow, transform;
+    }
+    .jumbotron .tombol-2:hover,
+    .jumbotron .tombol-2:focus ,
+    .jumbotron .tombol-2:active  {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .wrapper .button{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 0 5px;
+        overflow: hidden;
+        background: #fff;
+        cursor: pointer;
+        border-radius: 50px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out;
+    }
+
+    .wrapper .button:hover{
+        width: 200px;
+    }
+
+    .wrapper .button .icon{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+    }
+    .wrapper .button .icon i{
+        font-size: 20px;
+        line-height: 60px;
+    }
+    .wrapper .button .icon span{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+    }
+    .info-panel{
+        box-shadow:0 3px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        padding: 7px;
+    }
+    .dsp{
+        display: grid;
+        place-items: center;
+    }
+}
+
+/* Dexktop (Desktop to Laptop) */
+@media (max-width: 1200px) {
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 5px;
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron .tombol-2{
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background: white;
+        padding: 10px;
+        text-transform: uppercase;
+        color: #404040;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transfom;
+        transition-property: box-shadow, transform;
+    }
+    .jumbotron .tombol-2:hover,
+    .jumbotron .tombol-2:focus ,
+    .jumbotron .tombol-2:active  {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .wrapper .button{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 0 5px;
+        overflow: hidden;
+        background: #fff;
+        cursor: pointer;
+        border-radius: 50px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out;
+    }
+
+    .wrapper .button:hover{
+        width: 200px;
+    }
+
+    .wrapper .button .icon{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+    }
+    .wrapper .button .icon i{
+        font-size: 20px;
+        line-height: 60px;
+    }
+    .wrapper .button .icon span{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+    }
+    .info-panel{
+        box-shadow:0 3px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        padding: 7px;
+    }
+    .dsp{
+        display: grid;
+        place-items: center;
+    }
+}
+
+/* Laptop */
+@media (max-width: 993px) {
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 5px;
+    }
+
+    .jumbotron p{
+        font-size: 18px;
+    }
+
+    .jumbotron .tombol-2{
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        background: white;
+        padding: 10px;
+        text-transform: uppercase;
+        color: #404040;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transfom;
+        transition-property: box-shadow, transform;
+    }
+    .jumbotron .tombol-2:hover,
+    .jumbotron .tombol-2:focus ,
+    .jumbotron .tombol-2:active  {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .jumbotron .img{
+        display: none;
+    }
+
+    .wrapper .button{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 0 5px;
+        overflow: hidden;
+        background: #fff;
+        cursor: pointer;
+        border-radius: 50px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-out;
+    }
+
+    .wrapper .button:hover{
+        width: 200px;
+    }
+
+    .wrapper .button .icon{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 60px;
+    }
+    .wrapper .button .icon i{
+        font-size: 20px;
+        line-height: 60px;
+    }
+    .wrapper .button .icon span{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: 10px;
+    }
+    .info-panel{
+        box-shadow:0 3px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        padding: 7px;
+    }
+    .dsp{
+        display: grid;
+        place-items: center;
+    }
+}
+
+/* Laptop */
+@media (max-width: 425px) {
+
+    .jumbotron h1{
+        font-size: 25px;
+    }
+
+    .jumbotron p{
+        font-size: 12px;
+    }
+
+    .jumbotron .tombol-2{
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        background: white;
+        padding: 10px;
+        text-transform: uppercase;
+        color: #404040;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transfom;
+        transition-property: box-shadow, transform;
+    }
+    .jumbotron .tombol-2:hover,
+    .jumbotron .tombol-2:focus ,
+    .jumbotron .tombol-2:active  {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .jumbotron .img{
+        display: none;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .button{
+        display: none;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .info-panel{
+       display: none;
+    }
+    .dsp{
+        display: none;
+    }
+    .jumbotron{
+        height: 510px;
+    }
+}
